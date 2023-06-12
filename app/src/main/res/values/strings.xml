@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Assigment</string>
+    <string name="restaurant_name">Impression Hot Pot Restaurant</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="soup_tab">Soups</string>
+    <string name="vegetable_tab">Vegetables</string>
+    <string name="meal_tab">Meals</string>
+    <string name="drink_tab">Drinks</string>
+    <string name="dessert_tab">Desserts</string>
+    <string name="soup_grid_box">Grid Box Hotpot</string>
+    <string name="title_registration">Registration</string>
+    <string name="lab_firstname">FirstName</string>
+    <string name="lab_lastname">LastName</string>
+    <string name="phone">       Phone</string>
+    <string name="default_phone">+64 021345678</string>
+    <string name="lab_address">   Address</string>
+    <string name="default_address">123 Tay Street</string>
+    <string name="lab_email">        Email</string>
+    <string name="default_email">123@customer.com</string>
+    <string name="txt_confirm">Confirm</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="lab_password">Password</string>
+    <string name="txt_password">12345678</string>
+</resources>

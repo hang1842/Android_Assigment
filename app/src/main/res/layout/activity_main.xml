@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar_main"
+        android:id="@+id/toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hotpot"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restaurant_name"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:layout_gravity="bottom|center_horizontal"
+            android:shadowRadius="10"
+            android:shadowColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/registe"
+            android:layout_marginRight="@dimen/margin_gap1"
+            android:contentDescription="registration"
+            android:onClick="click_registration"/>
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="cart"
+            android:layout_marginLeft="@dimen/margin_gap1"
+            android:src="@drawable/cart"
+            android:onClick="click_cart"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textSize="35dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/grey"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:id="@+id/soups"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/soups"
+                android:layout_marginRight="10dp"
+                android:contentDescription="soups"
+                android:scaleType="centerCrop"
+                android:onClick="buttonClick"/>
+
+            <ImageButton
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/vegetables"
+                android:contentDescription="vegetables"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/vegetables"
+                android:onClick="buttonClick"/>
+
+            <ImageButton
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:id="@+id/meals"
+                android:layout_marginLeft="2dp"
+                android:contentDescription="meals"
+                android:src="@drawable/meals"
+                android:scaleType="centerCrop"
+                android:onClick="buttonClick"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/drinks"
+                android:contentDescription="drinks"
+                android:src="@drawable/drink"
+                android:layout_marginRight="@dimen/margin_gap1"
+                android:scaleType="centerCrop"
+                android:onClick="buttonClick"/>
+
+            <ImageButton
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:id="@+id/desserts"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/desserts"
+                android:contentDescription="desserts"
+                android:scaleType="centerCrop"
+                android:onClick="buttonClick"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
